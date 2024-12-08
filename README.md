@@ -3,3 +3,17 @@
 - ติดตั้ง XAMPP เพื่อใช้งาน Apache และ MySQL
 - เริ่มต้นบริการ Apache และ MySQL ผ่าน XAMPP Control Panel
 การสร้างฐานข้อมูล:
+-- สร้างฐานข้อมูล android
+CREATE DATABASE android;
+
+-- ใช้ฐานข้อมูล android
+USE android;
+
+-- สร้างตาราง users
+CREATE TABLE users (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    fullname TEXT COLLATE utf8mb4_general_ci NOT NULL,
+    username VARCHAR(100) COLLATE utf8mb4_general_ci NOT NULL UNIQUE,
+    password TEXT COLLATE utf8mb4_general_ci NOT NULL,
+    email VARCHAR(300) COLLATE utf8mb4_general_ci NOT NULL UNIQUE
+);
