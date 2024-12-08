@@ -3,7 +3,7 @@
 - ติดตั้ง XAMPP เพื่อใช้งาน Apache และ MySQL
 - เริ่มต้นบริการ Apache และ MySQL ผ่าน XAMPP Control Panel
 ## การสร้างฐานข้อมูล:
-```javascript
+```
 -- สร้างฐานข้อมูล android
 CREATE DATABASE android;
 
@@ -18,3 +18,8 @@ CREATE TABLE users (
     password TEXT COLLATE utf8mb4_general_ci NOT NULL,
     email VARCHAR(300) COLLATE utf8mb4_general_ci NOT NULL UNIQUE
 );
+```
+## ดาวน์โหลดไฟล์และสร้างโฟร์เดอร์
+- สร้าง
+## สร้างโปรเจค android studio ตั้งชื่อ Login-Register
+- Name:    Login-Register
